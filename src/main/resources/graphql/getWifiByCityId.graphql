@@ -1,0 +1,22 @@
+query fetchHotspotsList($id: ID!) {
+    city(id: $id) {
+        id
+        centerLat
+        centerLng
+        hotspotsCount
+        name
+        country{
+            id
+            name
+        }
+        hotspots {
+            address
+            downloadSpeed
+            lastConnectedAt
+            lat
+            lng
+            name
+            ssid
+        }
+    }
+}

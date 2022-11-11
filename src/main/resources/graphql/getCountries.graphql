@@ -1,0 +1,6 @@
+query fetchHotspotsList {
+    countries {
+        id
+        name
+    }
+}
